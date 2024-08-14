@@ -24,4 +24,29 @@ print("computer choice is",comp_choice_name)
 print(choice_name,"VS",comp_choice_name)
 if(choice==comp_choice):
    print("its draw")
-    result
+    result="Draw"
+elif(choice==1 and comp_choice==2):
+   print("paper wins")
+   result="paper"
+elif(choice==1 and comp_choice==3):
+   print("rock wins")
+   result="rock"
+elif(choice==2 and comp_choice==1):
+   print("paper wins")
+   result="paper"
+elif(choice==2 and comp_choice==3):
+   print("scissors wins")
+   result="scissors"
+elif(choice==3 and comp_choice==1):
+   print("rock wins")
+   result="rock"
+else:
+   print("scissors wins")
+   result="scissors"
+if(result=="DRAW"):
+  print("it is a tie")
+elif(result==choice_name):
+   print("user wins")
+else:
+  print("computer wins")
+print("thanks for playing")
